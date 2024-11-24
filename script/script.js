@@ -52,14 +52,14 @@ function computerTurn() {
 
 function checkWinner() {
   if (player === computer) {
-    return "Draw"; // 동점 처리
+    return "비겼다!"; // 동점 처리
   } else if (
     (player === "rock" && computer === "scissors") ||
     (player === "paper" && computer === "rock") ||
     (player === "scissors" && computer === "paper")
   ) {
-    return "You Win!"; // 플레이어 승리
+    return "당신은 엄청난 행운아!"; // 플레이어 승리
   } else {
-    return "You Lose!"; // 컴퓨터 승리
+    return "당신은 AI에게 졌습니다 ㅋ"; // 컴퓨터 승리
   }
 }
